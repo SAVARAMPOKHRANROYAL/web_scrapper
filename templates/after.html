@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Flipkart Scraping
+    </title>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Stars</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+                <td><img src="{{ i.Images }}" alt="{{ i.Title }}"></td>
+                <td>{{ i.Title }}</td>
+                <td>{{ i.Price }}</td>
+                <td>{{ i.Stars }}</td>
+            </tr>
+            {% endfor %} 
+    </body>
+</html>
